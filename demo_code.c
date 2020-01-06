@@ -2,30 +2,29 @@
 #import<conio.h>
 void main()
 {
-    int num =0,i=0;
-    int temp_num=0,reverse_num=0,temp=0;
-    printf("Enter a number");
-    scanf("%d",&num);
 
+char s[10] ;
+char rev_string[10];
+int i=0,j=0;
+printf("Enter a string\n");
+scanf("%s",s);
+printf("\n");
+int len = printf("%s",s);
+printf("len is %d",len);
+for(i=len-1;i>=0;i--)
+{
+    rev_string[j]=s[i];
+    j++;
+}
+rev_string[j]='\0';
+printf("\n reverse string is %s",rev_string);
+if(strcmp(s,rev_string)==0)
+{
+    printf("\nString is Palindrome");
+}
+else
+{
 
-    temp=num;
-        while(num)
-        {
-            temp_num = num%10;
-            reverse_num= reverse_num*10+temp_num;
-            num = num/10;
-
-        }
-    if(temp== reverse_num)
-    {
-
-        printf("Number is palindrome");
-    }
-    else
-    {
-     printf("Number is not Palindrome");
-	}
-
-
-
+    printf("\nString is not  a Palindrome");
+}
 }
