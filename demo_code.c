@@ -19,8 +19,12 @@ void main()
     if(temp== reverse_num)
     {
 
-        printf("No is palindrome");
+        printf("Number is palindrome");
     }
+    else
+    {
+     printf("Number is not Palindrome");
+	}
 
 
 
